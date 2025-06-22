@@ -1,0 +1,43 @@
+@use '../abstract/variables' as *
+
+.form
+    background: $linear-base
+    padding: 30px
+    display: flex
+    flex-direction: column
+    gap: 10px
+    flex: 1
+    &-message
+        background: transparent
+        max-width: 100%
+        width: 100%
+        padding: 0
+        resize: none
+        border: none
+        border-bottom: 1px solid $white
+        color: $white
+        outline: none
+        &::placeholder
+            color: $white
+    &-wrapper
+        display: grid
+        grid-template-columns: auto 120px
+        gap: 10px
+    &-input
+        border: none
+        padding: 10px 0
+        border: none
+        border-bottom: 1px solid $white
+        color: $white
+        background: transparent
+        outline: none
+        &::placeholder
+            color: $white
+    &-btn
+        background: $black
+        color: $white
+        border: none
+        transition: all .3s
+        &:hover
+            background: $linear-base
+            cursor: pointer

@@ -1,0 +1,76 @@
+@use '../abstract/variables' as *
+
+.intro
+    padding: 100px 0
+    background: $linear-base
+    &-wrapper
+        display: flex
+        align-items: center
+        justify-content: space-between
+        gap: 10px
+    &-info
+        display: flex
+        flex-direction: column
+        &__name
+            color: $black
+            font-size: 50px
+            font-weight: 300
+            text-transform: uppercase
+            span
+                font-size: 70px
+                font-weight: 700
+                font-family: Rubik Gemstones, sans-serif
+        &__profession
+            margin-top: 24px
+            color: $black
+            font-weight: 400
+        &__btn
+            margin-top: 10px
+            max-width: max-content
+            padding: 10px 20px
+            display: flex
+            align-items: center
+            gap: 10px
+            background: $black
+            color: $white
+            border: none
+            transition: all .3s
+            &:hover
+                cursor: pointer
+                background: $linear-base
+        &__contacts
+            margin-top: 10px
+            display: flex
+            align-items: center
+            gap: 20px
+        &__phone,
+        &__mail
+            display: flex
+            align-items: center
+            gap: 3px
+            color: $black
+            font-size: 18px
+            font-weight: 700
+            text-decoration: none
+            transition: all .3s
+            &:hover
+                background: $linear-base
+                -webkit-background-clip: text
+                background-clip: text
+                -webkit-text-fill-color: transparent
+
+    &-img
+        max-width: 400px
+        width: 100%
+        height: 400px
+        display: flex
+        justify-content: center
+        align-items: center
+        border-radius: 100%
+        overflow: hidden
+        position: relative
+        img
+            position: absolute
+            top: -80px
+            width: 100%
+            object-fit: cover

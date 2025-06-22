@@ -1,0 +1,22 @@
+@use '../abstract/variables' as *
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Gemstones&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap')
+
+*, *::before, *::after
+    box-sizing: border-box
+    font-family: Rubik, sans-serif
+    line-height: 1.2
+
+.app
+    background: $white
+    overflow-y: auto
+    height: 100vh
+    scrollbar-width: none /* Скрыть скроллбар для Firefox */
+    -ms-overflow-style: none /* Скрыть для IE и Edge */
+    &::-webkit-scrollbar
+        display: none /* Скрыть для Chrome, Safari, Edge */
+
+.container
+    margin: 0 auto
+    max-width: 1298px
+    width: 100%
+    padding: 0 10px

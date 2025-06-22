@@ -1,0 +1,29 @@
+
+@use '../abstract/variables' as *
+.tabs
+    margin-top: 20px
+    &-btns
+        display: flex
+        justify-content: center
+        align-items: center
+        gap: 10px
+    &-tab
+        padding: 5px 20px
+        border-radius: 12px
+        border: 1px solid rgba(184, 106, 223,.7)
+        color: $white
+        transition: all .3s
+        background: transparent
+        &:hover,
+        &.active
+            color: rgba(184, 106, 223,.7)
+            background: $white
+            cursor: pointer
+    &-content
+        margin-top: 20px
+    &-items
+        display: none
+        grid-template-columns: repeat(3, 1fr)
+        gap: 10px
+        &.active
+            display: grid
